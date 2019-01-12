@@ -1,0 +1,54 @@
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <YYKit/YYKit.h>
+#import "NSString+UI.h"
+#import <Masonry/Masonry.h>
+#import "UIColor+UI.h"
+#import "UIView+Extension.h"
+#import <BlocksKit+UIKit.h>
+#import "UIImage+Extension.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <BlocksKit/BlocksKit.h>
+//判断iPhoneX机型
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define TopNavHeight (KIsiPhoneX ? 84 : 64)
+#define TabbarHeight (KIsiPhoneX ? 83 : 49)
+#define StateBarHeight (KIsiPhoneX ? 44 : 20) //状态栏高度
+#define NavBarHeight (KIsiPhoneX ? 64 : 44)
+#define BottomSafeAreaHeight (KIsiPhoneX ? 34 : 0)
+#define TopSafeAreaHeight (KIsiPhoneX ? 24 : 0)
+
+//NavBar高度
+#define NAVIGATION_BAR_HEIGHT 44
+//状态栏 ＋ 导航栏 高度
+#define STATUS_AND_NAVIGATION_HEIGHT ((StateBarHeight) + (NAVIGATION_BAR_HEIGHT))
+
+//屏幕 rect
+#define SCREEN_RECT ([UIScreen mainScreen].bounds)
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define CONTENT_HEIGHT (SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - StateBarHeight)
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+/***** 最大照片数 *****/
+#define MAXPICTURECOUNT  9
+
+/***** 自定义字体 *****/
+#define CustomFontName(s) [UIFont fontWithName:@"Monaco" size:s]
+
+/***** 自定义颜色 *****/
+#define ColorFromHexStr(hexStr) ColorFromHexAlpha(hexStr, 1)
+#define ColorFromHexAlpha(hexStr,a) [UIColor colorWithHexString:(hexStr) alpha:(a)]
+#define ColorFromRGB(r, g, b) ColorFromRGBA(r, g, b, 1)
+#define ColorFromRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define ColorFromRandom [UIColor colorWithRed:((arc4random()%256)/255.0) green:((arc4random()%256)/255.0) blue:((arc4random()%256)/255.0) alpha:1]
+
+#define ImgHeader @"http://static.soperson.com"
+
+#endif /* PrefixHeader_pch */

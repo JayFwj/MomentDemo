@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  MomentDemo
+
+  Created by JAY on 2019/1/12.
+  Copyright © 2019 JAY. All rights reserved.
+*/
+"Done" = "完成";
+"Edit" = "编辑";
+"Cancle" = "取消";
+"Confirm" = "确认";
+"Common.Settings" = "去设置";
+
+
+//---添加聊天和发现后新增---
+"Discover" = "发现";
+"Discover.Del" = "删除";
+"Discover.AllTxt" = "查看全文";
+"Discover.FoldTxt" = "收起";
+"Discover.Publish.LeaveAlert" = "离开此页面";
+"Discover.CameraUnavailable" = "相机不可用";
+"Discover.AlbumUnavailable" = "相册不可用";
+"Discover.CameraUnavailable.Hint" = "请在 设置 -> 隐私 -> 相机 中开启权限";
+"Discover.AlbumUnavailable.Hint" = "请在 设置 -> 隐私 -> 相片 中开启权限";
+"Discover.TakePhoto" = "相机";
+"Discover.Album" = "相册";
+"Discover.IGotIt" = "我知道了";
+"Discover.Publish" = "发表";
+"Discover.Hint" = "这一刻的想法...";
+"Discover.ShowLoc" = "显示位置";
+"Discover.SearchNearPlace" = "搜索附近位置";
+
+
+"NearPeople" = "附近的人";
+"NearPeople.Visible" = "是否运行自己被别人查看";
+"NearPeople.Distance" = "DISTANCE米以内";
+"NearPeople.All" = "查看全部";
+"NearPeople.Man" = "只看男生";
+"NearPeople.Famel" = "只看女生";
+
